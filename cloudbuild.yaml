@@ -18,7 +18,8 @@ steps:
   - 'push'
   - 'gcr.io/${PROJECT_ID}/truemailserver:${SHORT_SHA}'
 
-# Deploy image to Cloud Run Google Cloud 
+# Deploy image to Cloud Run Google Cloud
+
 - name: 'gcr.io/cloud-builders/gcloud'
   id : Deploy to Cloud Run
   args:
