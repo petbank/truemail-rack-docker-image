@@ -24,7 +24,7 @@ ENV INFO="Truemail lightweight rack based web API 🚀" \
     ACCESS_TOKENS=f44cd67e-aaa0-4e6c-aa6c-d52cf61f84ac \
     SMTP_ERROR_BODY_PATTERN="/(?=.*550)(?=.*(user|account|customer|mailbox)).*/" \
     DNS=208.67.222.222,208.67.220.220 \
-    SMTP_PORT=465 \
+    SMTP_PORT=587 \
     SMTP_SAFE_CHECK=true \
     SMTP_FAIL_FAST=true \
     NOT_RFC_MX_LOOKUP_FLOW=true \
