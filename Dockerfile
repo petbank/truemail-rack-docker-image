@@ -26,6 +26,7 @@ ENV INFO="Truemail lightweight rack based web API 🚀" \
     SMTP_ERROR_BODY_PATTERN="/(?=.*550)(?=.*(user|account|customer|mailbox|something_else)).*/" \
     DNS=8.8.8.8,8.8.4.4:53 \
     NOT_RFC_MX_LOOKUP_FLOW=true \
+    SMTP_PORT=587 \
     SMTP_FAIL_FAST=true \
     SMTP_SAFE_CHECK=true \
     LOG_STDOUT=true
