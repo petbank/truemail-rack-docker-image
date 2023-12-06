@@ -25,6 +25,7 @@ ENV INFO="Truemail lightweight rack based web API 🚀" \
     DNS=208.67.222.222,208.67.220.220 \
     SMTP_PORT=587 \
     SMTP_SAFE_CHECK=true \
+    SMTP_FAIL_FAST=true \
     LOG_STDOUT=true
     LABEL description=$INFO
 RUN apk add curl && \
