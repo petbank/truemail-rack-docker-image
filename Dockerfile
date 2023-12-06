@@ -21,7 +21,14 @@ ENV INFO="Truemail lightweight rack based web API 🚀" \
     APP_HOME="/var/lib/truemail-rack" \
     APP_PORT="8080" \
     VERIFIER_EMAIL=sistema@alkc.com.br \
-    ACCESS_TOKENS=a262d915-15bc-417c-afeb-842c63b54154,f44cd67e-aaa0-4e6c-aa6c-d52cf61f84ac
+    ACCESS_TOKENS=a262d915-15bc-417c-afeb-842c63b54154,f44cd67e-aaa0-4e6c-aa6c-d52cf61f84ac \
+    EMAIL_PATTERN="/\A.+@.+\z/" \
+    SMTP_ERROR_BODY_PATTERN="/(?=.*550)(?=.*(user|account|customer|mailbox|something_else)).*/" \
+    DNS=8.8.8.8,8.8.4.4:53 \
+    NOT_RFC_MX_LOOKUP_FLOW=true \
+    SMTP_FAIL_FAST=true \
+    SMTP_SAFE_CHECK=true \
+    LOG_STDOUT=true
     LABEL description=$INFO
 RUN apk add curl && \
     adduser -D $APP_USER
