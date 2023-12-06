@@ -82,3 +82,4 @@ Everyone interacting in the Truemail project’s codebases, issue trackers, chat
 ## Versioning
 
 truemail-rack-docker-image uses [Semantic Versioning 2.0.0](https://semver.org)
+
