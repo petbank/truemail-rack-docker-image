@@ -20,13 +20,14 @@ ENV INFO="Truemail lightweight rack based web API 🚀" \
     APP_USER="truemail" \
     APP_HOME="/var/lib/truemail-rack" \
     APP_PORT="8080" \
-    VERIFIER_EMAIL=sistema@alkc.com.br \
+    VERIFIER_EMAIL=nao-responda@megapedigree.com \
     ACCESS_TOKENS=f44cd67e-aaa0-4e6c-aa6c-d52cf61f84ac \
     SMTP_ERROR_BODY_PATTERN="/(?=.*550)(?=.*(user|account|customer|mailbox)).*/" \
     DNS=208.67.222.222,208.67.220.220 \
     SMTP_PORT=587 \
     SMTP_SAFE_CHECK=true \
     SMTP_FAIL_FAST=true \
+    BLACKLISTED_DOMAINS=outlook.com,hotmail.com,live.com,msn.com \
     LOG_STDOUT=true
     LABEL description=$INFO
 RUN apk add curl && \
