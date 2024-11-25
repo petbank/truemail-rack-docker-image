@@ -9,7 +9,7 @@ steps:
   - '-t'
   - 'gcr.io/${PROJECT_ID}/truemailserver:${SHORT_SHA}'
   - '.'
-  
+
 # This step pushes the image to Container Registry
 
 - name: 'gcr.io/cloud-builders/docker'
