@@ -27,7 +27,7 @@ ENV INFO="Truemail lightweight rack based web API 🚀" \
     SMTP_PORT=587 \
     SMTP_SAFE_CHECK=true \
     SMTP_FAIL_FAST=true \
-    BLACKLISTED_DOMAINS=outlook.com,hotmail.com,live.com,msn.com \
+    BLACKLISTED_DOMAINS=outlook.com,hotmail.com,live.com,msn.com,yahoo.com \
     LOG_STDOUT=true
     LABEL description=$INFO
 RUN apk add curl && \
